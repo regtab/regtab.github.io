@@ -5,6 +5,7 @@ site_url: https://regtab.github.io/
 
 theme:
   name: material
+  logo: assets/logo.svg
   language: en
   palette:
     # Light mode
