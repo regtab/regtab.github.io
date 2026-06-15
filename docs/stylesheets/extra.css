@@ -21,3 +21,16 @@
 .project-card h3 {
   margin-top: 0.25rem;
 }
+
+/* Action buttons inside a card: even spacing whether in a row or wrapped */
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Reset the theme's default button margins so only the gap controls spacing */
+.card-actions .md-button {
+  margin: 0;
+}

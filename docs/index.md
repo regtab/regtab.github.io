@@ -21,20 +21,26 @@ layout follows a regular structure that can be captured by patterns.
 ### jRegTab
 A reference implementation of RegTab in Java.
 
-[Documentation](https://regtab.github.io/jregtab/){ .md-button .md-button--primary }
-[Repository](https://github.com/regtab/jregtab){ .md-button }
+<div class="card-actions">
+  <a class="md-button md-button--primary" href="https://regtab.github.io/jregtab/">Documentation</a>
+  <a class="md-button" href="https://github.com/regtab/jregtab">Repository</a>
+</div>
 </div>
 
 <!--
   Card template for the next tool — copy the block above,
   then change the name, description and links.
+  Note: write the buttons as raw <a> tags (no `markdown` attribute on
+  .card-actions) so Markdown does not wrap them in a <p>.
 
 <div class="project-card" markdown>
 ### Tool name
 A short one- or two-line description.
 
-[Documentation](https://regtab.github.io/repository-name/){ .md-button .md-button--primary }
-[Repository](https://github.com/regtab/repository-name){ .md-button }
+<div class="card-actions">
+  <a class="md-button md-button--primary" href="https://regtab.github.io/repository-name/">Documentation</a>
+  <a class="md-button" href="https://github.com/regtab/repository-name">Repository</a>
+</div>
 </div>
 -->
 
