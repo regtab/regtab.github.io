@@ -27,6 +27,16 @@ A reference implementation of RegTab in Java.
 </div>
 </div>
 
+<div class="project-card" markdown>
+### pyRegTab
+A reference implementation of RegTab in Python.
+
+<div class="card-actions">
+  <a class="md-button md-button--primary" href="https://regtab.github.io/pyregtab/">Documentation</a>
+  <a class="md-button" href="https://github.com/regtab/pyregtab">Repository</a>
+</div>
+</div>
+
 <!--
   Card template for the next tool — copy the block above,
   then change the name, description and links.
