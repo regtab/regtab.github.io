@@ -75,7 +75,7 @@ pandas DataFrames.
 </div>
 
 <div class="project-card" markdown>
-### vscode-rtl
+### VSCode-RTL
 Full RTL support in VS Code: highlighting, as-you-type diagnostics and
 completion, and live match preview against sample tables.
 
