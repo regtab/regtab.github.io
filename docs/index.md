@@ -6,12 +6,43 @@ hide:
 
 # RegTab
 
-**Pattern-driven data extraction from document tables with regular structure**
+**Turn tables made for people into machine-readable records.**
 
-RegTab is a method and a set of tools for extracting data from tables that
-appear in spreadsheets, web pages, and other documents — presentation-oriented
-tables, as opposed to normalized relational ones. It targets tables whose
-layout follows a regular structure that can be captured by patterns.
+RegTab is a data-wrangling toolkit for tables designed for reading rather
+than querying — spreadsheets, cross-tabs and reports with hierarchical
+headers and compound cells. At its core is RTL (Regular Table Language),
+a pattern DSL that does for tables what regular expressions do for strings:
+a pattern describes the table's repeating layout and how the matched cells
+map to attributes, values and records.
+
+For example, take this cross-tab of airline on-time data: airlines across
+the top, airports down the side, and compound cells like `31 Jan` holding
+two values — a number and a month:
+
+|     | CA     | HU     |
+|-----|--------|--------|
+| IKT | 0 Jan  | 8 Feb  |
+| SVO | 31 Jan | 40 Feb |
+
+This RTL pattern mirrors the layout — a header row of airlines, then
+repeated airport rows — and tells how the matched cells map to attributes
+(`->AVP`) and records (`->REC`):
+
+```text
+[ [] [VAL : 'AIRLINE'->AVP]+ ]
+[ [VAL : 'AIRPORT'->AVP]
+  [VAL : (COL, ROW, CL)->REC, 'ND'->AVP " " VAL : 'MON'->AVP]+ ]+
+```
+
+Matching it against the table unpivots the cross-tab into a flat record
+set — one record per data cell, ready for a DataFrame or CSV:
+
+| ND | AIRLINE | AIRPORT | MON |
+|----|---------|---------|-----|
+| 0  | CA      | IKT     | Jan |
+| 8  | HU      | IKT     | Feb |
+| 31 | CA      | SVO     | Jan |
+| 40 | HU      | SVO     | Feb |
 
 ## Tools
 
@@ -39,7 +70,7 @@ A reference implementation of RegTab in Python.
 
 <div class="project-card" markdown>
 ### vscode-rtl
-VS Code extension for RTL (Regular Table Language): syntax highlighting and
+VS Code extension for RTL: syntax highlighting and
 language support for `.rtl` pattern files.
 
 <div class="card-actions">
