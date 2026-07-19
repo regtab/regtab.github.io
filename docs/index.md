@@ -50,7 +50,9 @@ set — one record per data cell, ready for a DataFrame or CSV:
 
 <div class="project-card" markdown>
 ### jRegTab
-A reference implementation of RegTab in Java.
+The reference implementation of RegTab in Java. Use RTL — standalone or
+embedded — or skip the DSL and work directly with the ATP pattern and
+ITM table-model APIs.
 
 <div class="card-actions">
   <a class="md-button md-button--primary" href="https://regtab.github.io/jregtab/">Documentation</a>
@@ -60,7 +62,8 @@ A reference implementation of RegTab in Java.
 
 <div class="project-card" markdown>
 ### pyRegTab
-A reference implementation of RegTab in Python.
+A Python port of jRegTab; extracted record sets convert straight to
+pandas DataFrames.
 
 <div class="card-actions">
   <a class="md-button md-button--primary" href="https://regtab.github.io/pyregtab/">Documentation</a>
@@ -70,8 +73,8 @@ A reference implementation of RegTab in Python.
 
 <div class="project-card" markdown>
 ### vscode-rtl
-VS Code extension for RTL: syntax highlighting and
-language support for `.rtl` pattern files.
+Full RTL support in VS Code: highlighting, as-you-type diagnostics and
+completion, and live match preview against sample tables.
 
 <div class="card-actions">
   <a class="md-button md-button--primary" href="https://github.com/regtab/vscode-rtl">Repository</a>
