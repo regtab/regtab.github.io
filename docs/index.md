@@ -37,6 +37,16 @@ A reference implementation of RegTab in Python.
 </div>
 </div>
 
+<div class="project-card" markdown>
+### vscode-rtl
+VS Code extension for RTL (Regular Table Language): syntax highlighting and
+language support for `.rtl` pattern files.
+
+<div class="card-actions">
+  <a class="md-button md-button--primary" href="https://github.com/regtab/vscode-rtl">Repository</a>
+</div>
+</div>
+
 <!--
   Card template for the next tool — copy the block above,
   then change the name, description and links.
