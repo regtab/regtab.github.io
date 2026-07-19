@@ -22,7 +22,7 @@ cross-tab of airline on-time data: a header row of airlines, then
 repeated airport rows. Cell values map to attributes (`->AVP`) and
 records (`->REC`):
 
-```text
+```rtl
 [ [] [VAL : 'AIRLINE'->AVP]+ ]
 [ [VAL : 'AIRPORT'->AVP]
   [VAL : (COL, ROW, CL)->REC, 'ND'->AVP " " VAL : 'MON'->AVP]+ ]+

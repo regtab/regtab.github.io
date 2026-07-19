@@ -1,0 +1,6 @@
+# MkDocs build output
+site/
+
+# Python build artifacts (from `pip install ./rtl-lexer`)
+rtl-lexer/build/
+rtl-lexer/*.egg-info/
