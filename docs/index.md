@@ -50,9 +50,8 @@ set — one record per data cell, ready for a DataFrame or CSV:
 
 <div class="project-card" markdown>
 ### jRegTab
-The reference implementation of RegTab in Java. Use RTL — standalone or
-embedded — or skip the DSL and work directly with the ATP pattern and
-ITM table-model APIs.
+The reference implementation of RegTab in Java. Use RTL as a standalone
+or embedded DSL.
 
 <div class="card-actions">
   <a class="md-button md-button--primary" href="https://regtab.github.io/jregtab/">Documentation</a>
