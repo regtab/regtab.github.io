@@ -80,7 +80,8 @@ Full RTL support in VS Code: highlighting, as-you-type diagnostics and
 completion, and live match preview against sample tables.
 
 <div class="card-actions">
-  <a class="md-button md-button--primary" href="https://github.com/regtab/vscode-rtl">Repository</a>
+  <a class="md-button md-button--primary" href="https://marketplace.visualstudio.com/items?itemName=regtab.regtab">Marketplace</a>
+  <a class="md-button" href="https://github.com/regtab/vscode-rtl">Repository</a>
 </div>
 </div>
 
